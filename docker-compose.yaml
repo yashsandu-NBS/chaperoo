@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   chaperoo-frontend:
-    image: dockeryashnw/chaperoo-client
+    image: dockeryashnw/chaperoo-frontend
     build: .
     ports:
       - target: 80
