@@ -2,7 +2,7 @@ pipeline{
         agent any
         environment {
             app_version = 'v1'
-            rollback = 'true'
+            rollback = 'True'
         }
         stages{
             stage('Build Image'){
