@@ -30,5 +30,11 @@ pipeline{
                     sh "docker-compose pull && docker-compose up -d"
                 }
             }
+            stage('Run file'){
+                steps{
+                    sh "chmod +x run.sh"
+                      sh "./run.sh"
+                }
+            }
         }
 }
